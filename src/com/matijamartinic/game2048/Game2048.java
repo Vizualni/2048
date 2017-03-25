@@ -8,6 +8,25 @@ import java.util.ArrayList;
 
 final public class Game2048 {
 
+    private class Coordinates {
+
+        private int x, y;
+
+        public Coordinates(int x, int y) {
+            this.x = x;
+            this.y = y;
+        }
+
+        public int getX() {
+            return x;
+        }
+
+        public int getY() {
+            return y;
+        }
+    }
+
+
     private final Calculator calculator;
     int NUM_OF_ROWS = 4;
     int NUM_OF_COLS = 4;
